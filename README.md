@@ -2,7 +2,7 @@
 
 This is a solo project by [Scrimba's Frontend Career Path](https://scrimba.com/learn/frontend "Scrimba's frontend career path web page")
 
-![Scrimba Logo](https://scrimba.com/static/photos/pages/community/logo-scrimba-text.svg "Scrimba Logo")
+![Scrimba Logo](./resources/images/readme/scrimba-logo-1550x500.png "Scrimba Logo")
 
 <br>
 
@@ -49,6 +49,8 @@ _Repository tree/blobs_
             * [regional-ethonographic-museum.jpg](./resources/images/old-plovdiv/regional-ethonographic-museum.jpg)
             * [regional-ethonographic-museum-min.jpg](./resources/images/old-plovdiv/regional-ethonographic-museum-min.jpg)
             * [regional-ethonographic-museum.webp](./resources/images/old-plovdiv/regional-ethonographic-museum.webp)
+        * [readme/](./resources/images/readme/)
+            * [scrimba-logo-1550x500.png](./resources/images/readme/scrimba-logo-1550x500.png)
     * [javascript/](./resources/javascript/)
         * [app.js](./resources/javascript/app.js)
 * [.prettierrc](./.prettierrc)
