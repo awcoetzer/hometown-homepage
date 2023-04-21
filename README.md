@@ -118,6 +118,11 @@ _Figma file, Colours, Fonts ..._
         --clr-accent: hsl(31, 100%, 50%);
       ```        
 
+<br>
+
+#### PERFORMANCE RESULTS
+
+![Google Lighthouse Performance Results](./resources/images/readme/light-house-results.png 'Google Lighthouse Performance Results')
 
 <br>
 
