@@ -2,7 +2,7 @@
 
 This is a solo project by [Scrimba's Frontend Career Path](https://scrimba.com/learn/frontend "Scrimba's frontend career path web page")
 
-#### [VIEW PROJECT HERE]()
+#### [VIEW PROJECT HERE](https://jovial-lebkuchen-8d50c2.netlify.app/)
 
 ![Scrimba Logo](./resources/images/readme/scrimba-logo-1550x500.png "Scrimba Logo")
 
