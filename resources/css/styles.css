@@ -84,8 +84,8 @@
 
 /***** When selecting text, this style the selection made *****/
 ::selection {
-  background-color: var(--clr-main);
-  color: var(--clr-accent);
+  background-color: var(--clr-highlight);
+  color: var(--clr-shade);
 }
 
 /***** Basic reset for all elements on the page *****/
