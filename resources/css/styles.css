@@ -1,0 +1,543 @@
+/***** Project variables *****/
+:root {
+  /***** Typefaces *****/
+  --typeface-sans: 'Inter', sans-serif;
+  --typeface-cursive: 'Indie Flower', cursive;
+
+  /***** Color Palette *****/
+  /***** For Fonts *****/
+  --clr-grey: hsl(243, 48%, 17%);
+
+  /* Palette */
+  --clr-shade: hsl(243, 48%, 17%);
+  --clr-main: hsl(242, 47%, 34%);
+  --clr-tint: hsl(242, 36%, 41%);
+  --clr-tint-light: hsl(242, 36%, 46%);
+  --clr-tint-lighter: hsl(242, 36%, 52%);
+
+  /* Highlights & Accents */
+  --clr-highlight: hsl(0, 0%, 100%);
+  --clr-accent: hsl(31, 100%, 50%);
+
+  /***** General Font Sizes *****/
+  --font-10: 1rem;
+  --font-12: 1.2rem;
+  --font-14: 1.4rem;
+  --font-16: 1.6rem;
+  --font-18: 1.8rem;
+  --font-20: 2rem;
+  --font-24: 2.4rem;
+  --font-30: 3rem;
+  --font-32: 3.2rem;
+  --font-36: 3.6rem;
+  --font-44: 4.4rem;
+  --font-52: 5.2rem;
+  --font-62: 6.2rem;
+  --font-74: 7.2rem;
+  --font-86: 8.6rem;
+  --font-98: 9.8rem;
+
+  /***** Font Weights *****/
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-700: 700;
+
+  /***** General Line Heights *****/
+  --line-height-1: 1;
+  --line-height-17: 1.7;
+  --line-height-11: 1.1;
+
+  /***** Custom Line Heights *****/
+  --line-height-15: 1.5;
+
+  /***** Letter Spacing Negative *****/
+  --letter-space-n05: -0.5px;
+  --letter-space-n1: -1px;
+
+  /***** Letter Spacing Positive *****/
+  --letter-space-p05: 0.5px;
+  --letter-space-p1: 1px;
+
+  /***** General Spacing System *****/
+  --space-2: 0.2rem;
+  --space-4: 0.4rem;
+  --space-8: 0.8rem;
+  --space-12: 1.2rem;
+  --space-16: 1.6rem;
+  --space-24: 2.4rem;
+  --space-32: 3.2rem;
+  --space-48: 4.8rem;
+  --space-64: 6.4rem;
+  --space-80: 8rem;
+  --space-96: 9.6rem;
+  --space-128: 12.8rem;
+
+  /***** Custom Spacing System *****/
+  --space-340: 34rem;
+
+  --border-1: 0.1rem solid var(--bg-shade);
+  --border-3: 0.3rem solid var(--bg-shade);
+
+  --radius-1: 1rem;
+  --radius-round: 50%;
+}
+
+/***** When selecting text, this style the selection made *****/
+::selection {
+  background-color: var(--clr-main);
+  color: var(--clr-accent);
+}
+
+/***** Basic reset for all elements on the page *****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+    This is the tab selection, reason for this
+    is that the conforms to the each selection, 
+    incase they are different size.
+*/
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--clr-accent) !important;
+}
+
+/* 
+    Setting the font to a percentage for both 
+    accessibility reasons such as allowing to 
+    the website to adjust to the user font size 
+    settings in the browser and also by making 
+    your design calculation a lot easier, 
+    essentially 1rem = 10px.
+*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 72rem;
+  background-color: var(--clr-tint);
+  font-family: var(--typeface-sans);
+  font-weight: var(--weight-400);
+  font-size: var(--font-16);
+  line-height: var(--line-height-1);
+  color: var(--clr-shade);
+}
+
+/***** Repeating code *****/
+.container {
+  padding: 0 1rem;
+}
+
+.pre-heading {
+  display: block;
+  font-size: var(--font-12);
+  font-weight: var(--weight-700);
+  text-transform: uppercase;
+  line-height: var(--line-height-15);
+  letter-spacing: var(--letter-space-p1);
+  margin-bottom: var(--space-4);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: var(--weight-700);
+  letter-spacing: var(--letter-space-p1);
+}
+
+.heading-primary {
+  padding: 0.5rem 1.2rem;
+  font-size: var(--font-32);
+  line-height: 3.6rem;
+  text-shadow: 0 0 0.3rem black;
+}
+
+.heading-secondary {
+  font-size: var(--font-24);
+  line-height: 2.8rem;
+}
+
+.heading-tertiary {
+  font-size: var(--font-16);
+  line-height: 1.8rem;
+}
+
+.link,
+.link:link,
+.link:visited {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-size: var(--font-14);
+  text-decoration: none;
+  line-height: var(--line-height-15);
+  color: var(--clr-tint);
+  background-color: var(--clr-shade);
+}
+
+/***** Helper/ Utility Classes *****/
+.margin-bottom-sm {
+  margin-bottom: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 1.8rem !important;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 5.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* 
+    Section padding used to separate each section 
+    from each other.
+*/
+.section-padding {
+  padding: var(--space-48) 0;
+}
+
+/***** main *****/
+main {
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: var(--clr-tint-light);
+  box-shadow: 0 0 0.3rem var(--clr-shade);
+  overflow: hidden;
+}
+
+/***** Section Hero *****/
+.section-hero {
+  height: 34rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--typeface-cursive);
+  color: var(--clr-highlight);
+  background: linear-gradient(transparent 10%, var(--clr-tint-light) 95%),
+    center / cover url('../images/hero/hero-min.jpg');
+}
+
+.container--hero {
+  padding: 1rem;
+  width: 40rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-text {
+  padding: 0.5rem 2.8rem;
+  border-radius: 10rem;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 2.1rem;
+  text-shadow: 0 0 0.3rem black;
+}
+
+/***** Section Activities *****/
+.activities {
+  display: flex;
+  justify-content: space-around;
+}
+
+.activity-link,
+.activity-link:link,
+.activity-link:visited {
+  border-radius: var(--radius-1);
+  color: var(--clr-grey);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+.activity-link:hover,
+.activity-link:active {
+  color: var(--clr-highlight);
+}
+
+.activity {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  width: 20rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.activity-link:hover .activity,
+.activity-link:active .activity {
+  background-color: var(--clr-tint-lighter);
+}
+
+.activity-text-box h3 {
+  transition: transform 0.15s ease-in-out, border-bottom 0.15s ease-in-out;
+}
+
+.activity-link:hover .activity-text-box h3,
+.activity-link:active .activity-text-box h3 {
+  transform: scale(120%);
+  text-decoration: underline;
+}
+
+.activity-img-box {
+  position: relative;
+  border: 2px solid var(--clr-shade);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.activity:hover .activity-img-box {
+  transform: translateY(-1rem);
+  box-shadow: 0 0.8rem 0 -0.4rem var(--clr-shade);
+}
+
+.shopping {
+  background: no-repeat center / cover
+    url('../images/activities/plovdiv-central-min.jpg');
+}
+
+.parks {
+  background: no-repeat center / cover
+    url('../images/activities/park-water-light-show-min.jpg');
+}
+
+.amphitheater {
+  background: no-repeat center / cover
+    url('../images/activities/amphitheater-min.jpg');
+}
+
+.activity-text {
+  font-size: var(--font-16);
+  line-height: var(--line-height-15);
+  letter-spacing: var(--letter-space-n05);
+}
+
+/***** Section Old Plovdiv *****/
+.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+.component:last-of-type {
+  margin-bottom: 0;
+}
+
+.component-text-box {
+  padding: 0 2rem 0 0;
+  border: solid var(--clr-shade);
+  border-width: 0 1px 0 0;
+}
+
+.component:nth-child(2) .component-text-box {
+  padding: 0 0 0 2rem;
+  border: solid var(--clr-shade);
+  border-width: 0 0 0 1px;
+}
+
+.component-text {
+  font-size: var(--font-16);
+  line-height: var(--line-height-15);
+  letter-spacing: var(--letter-space-n05);
+}
+
+.component-link {
+  color: transparent !important;
+  overflow: hidden;
+}
+
+.component-link::before {
+  content: 'Learn More';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -40%);
+  color: var(--clr-tint);
+  transition: transform 0.25s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.component-link:hover.component-link::before {
+  transform: translate(-50%, -120%);
+  opacity: 0;
+}
+
+.component-link::after {
+  content: 'Learn More';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, 50%);
+  color: var(--clr-highlight);
+  opacity: 0;
+  transition: transform 0.25s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.component-link:hover.component-link::after {
+  transform: translate(-50%, -40%);
+  opacity: 1;
+}
+
+.component-img-box {
+  border: 2px solid var(--clr-shade);
+  border-radius: 1rem;
+  flex: 0 0 50%;
+  height: 20rem;
+}
+
+.old-town {
+  background: no-repeat center / cover
+    url('../images/old-plovdiv/old-plovdiv-bg-img-min.jpg');
+}
+
+.ethonographic {
+  order: -1;
+  background: no-repeat center / cover
+    url('../images/old-plovdiv/regional-ethonographic-museum-min.jpg');
+}
+
+.streets {
+  background: no-repeat center / cover
+    url('../images/old-plovdiv/old-plovidv-streets-min.jpg');
+}
+
+/***** Guide Section *****/
+.section-guide {
+  background: linear-gradient(var(--clr-tint-light) 10%, var(--clr-main) 95%);
+}
+
+.guide-link {
+  border-radius: var(--radius-1);
+}
+
+.guide {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border: 2px solid var(--clr-shade);
+  border-radius: 1rem;
+  max-width: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--clr-tint);
+  box-shadow: 0 0 0 -0.3rem var(--clr-accent);
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.guide:hover {
+  background-color: var(--clr-tint-light);
+  box-shadow: 0.4rem 0.4rem 0.4rem -0.3rem var(--clr-shade),
+    1.2rem 1.2rem 0 -0.3rem var(--clr-accent);
+  transform: translateY(-0.3rem);
+}
+
+.guide-img-box {
+  border-radius: 1rem;
+  height: 24rem;
+}
+
+.guide-img {
+  border-radius: 1rem;
+  height: 24rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.guide:hover .guide-img {
+  transform: translate(-20%, -10%);
+  box-shadow: 0 0 0 0.2rem var(--clr-highlight),
+    1.2rem 1.2rem 0 -0.4rem var(--clr-shade);
+}
+
+.guide-text-box {
+  display: flex;
+  flex-direction: column;
+}
+
+/***** Media Queries *****/
+/*
+    This is the first natural breakpoint of the site 
+    and so we divide the px by 1em which is 16px.
+
+    Never use pixels in media queries, as it will 
+    not adjust to the users browser font size settings.
+    Also never use rem in media queries as it is known 
+    to have some bugs, which is why we use em.
+*/
+
+/***** Mobile Devices | Size-px: 544 | Size-em: 34 *****/
+@media only screen and (max-width: 34em) {
+  html {
+    font-size: 56%;
+  }
+  .activities {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .component {
+    flex-direction: column;
+  }
+
+  .component-img-box {
+    padding: 5rem;
+    width: 100%;
+  }
+
+  .old-town {
+    order: -1;
+  }
+
+  .ethonographic {
+    order: -1;
+  }
+
+  .streets {
+    order: -1;
+  }
+
+  .component-text-box {
+    padding: 0;
+    border: none;
+    border-width: 0;
+  }
+
+  .component:nth-child(2) .component-text-box {
+    padding: 0;
+    border: none;
+    border-width: 0;
+  }
+}
+
+/***** Smaller Mobile Devices | Size-px: 288 | Size-em: 24 *****/
+@media only screen and (max-width: 24em) {
+  html {
+    font-size: 50%;
+  }
+}
