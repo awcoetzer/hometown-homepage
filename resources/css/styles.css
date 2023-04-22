@@ -307,6 +307,7 @@ main {
   width: 10rem;
   height: 10rem;
   transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  filter: saturate(90%) contrast(90%);
 }
 
 .activity:hover .activity-img-box {
@@ -411,6 +412,7 @@ main {
   border-radius: 1rem;
   flex: 0 0 50%;
   height: 20rem;
+  filter: saturate(90%) contrast(90%);
 }
 
 .old-town {
@@ -470,6 +472,7 @@ main {
   border-radius: 1rem;
   height: 24rem;
   transition: all 0.25s ease-in-out;
+  filter: saturate(90%) contrast(90%);
 }
 
 .guide:hover .guide-img {
