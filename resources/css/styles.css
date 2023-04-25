@@ -6,17 +6,16 @@
 
   /***** Color Palette *****/
   /* Background Color */
-  --clr-bg: hsl(0, 0%, 25%); 
+  --clr-bg: #eee; 
 
   /***** For Fonts *****/
-  --clr-grey: hsl(243, 48%, 17%);
+  --clr-grey: #EAEAF2;
 
   /* Palette */
-  --clr-shade: hsl(243, 48%, 17%);
-  --clr-main: hsl(242, 47%, 34%);
-  --clr-tint: hsl(242, 36%, 41%);
-  --clr-tint-light: hsl(242, 36%, 46%);
-  --clr-tint-lighter: hsl(242, 36%, 52%);
+  --clr-shade: #222059;
+  --clr-main: #312e7f;
+  --clr-tint: #46438C;
+  --clr-tint-lighter: hsla(244, 24%, 74%, 0.2);
 
   /* Highlights & Accents */
   --clr-highlight: hsl(0, 0%, 100%);
@@ -129,7 +128,7 @@ body {
   font-weight: var(--weight-400);
   font-size: var(--font-16);
   line-height: var(--line-height-1);
-  color: var(--clr-shade);
+  color: var(--clr-grey);
 }
 
 /***** Repeating code *****/
@@ -180,11 +179,12 @@ body {
   padding: 0.5rem 0;
   border-radius: 0.5rem;
   display: inline-block;
+  font-weight: 500;
   font-size: var(--font-14);
   text-decoration: none;
   line-height: var(--line-height-15);
-  color: var(--clr-tint);
-  background-color: var(--clr-shade);
+  color: var(--clr-shade);
+  background-color: var(--clr-accent);
 }
 
 /***** Helper/ Utility Classes *****/
@@ -216,7 +216,7 @@ body {
 main {
   margin: 1rem;
   border-radius: 1rem;
-  background-color: var(--clr-tint-light);
+  background-color: var(--clr-tint);
   box-shadow: 0 0 0.3rem var(--clr-shade);
   overflow: hidden;
 }
@@ -229,7 +229,7 @@ main {
   align-items: center;
   font-family: var(--typeface-cursive);
   color: var(--clr-highlight);
-  background: linear-gradient(transparent 10%, var(--clr-tint-light) 95%),
+  background: linear-gradient(transparent 10%, var(--clr-tint) 95%),
     center / cover url('../images/hero/hero-min.jpg');
 }
 
@@ -484,6 +484,13 @@ main {
 .guide-text-box {
   display: flex;
   flex-direction: column;
+}
+
+.guide-name {
+  font-weight: var(--weight-700);
+  letter-spacing: var(--letter-space-p1);
+  font-size: var(--font-16);
+  line-height: 1.8rem;
 }
 
 /***** Media Queries *****/
