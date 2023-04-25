@@ -8,6 +8,14 @@ This is a solo project by [Scrimba's Frontend Career Path](https://scrimba.com/l
 
 <br>
 
+#### ABOUT
+_What is the project all about?_
+
+The project was about combining all the information we learn't in Module 1 (HTML) & 2 (CSS) and make a website showcasing our hometown using that knowledge.
+We were given a figma [file](https://www.figma.com/file/2QuGfAOcHaZJ6aHXfuamnK/Hometown-Homepage?node-id=0-1&t=WtumGk6qv89yGCUR-0) from which to design off of and given requirements & stretch goals to can complete the project, list can be seen [here](#project-goals--stretch-goals).
+
+<br>
+
 #### REQUIREMENTS
 _What is required to run this project_
 
